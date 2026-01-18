@@ -13,6 +13,67 @@
     <title>TechWave</title>
   </head>
   <body>
-    
+    <div id="container" class="w-full max-w-400 h-screen sm:mx-auto">
+      <!-- navbar -->
+      <nav class="bg-[#1A0B2E] h-15 sm:h-24 text-white w-full">
+        <div
+          class="flex justify-between items-center sm:mx-20 md:mx-50 px-5 py-5"
+        >
+          <!-- logo -->
+          <div
+            class="text-white font-bold h-4 w-34.25 text-[25px] sm:text-[30px] flex justify-center items-center"
+          >
+            Tech<span
+              class="bg-[linear-gradient(60deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] bg-clip-text text-transparent"
+              >Wave</span
+            >
+          </div>
+          <!-- md screen -->
+          <ul class="hidden justify-between gap-8 text-md md:flex">
+            <li class="cursor-pointer hover:text-neutral-300">About</li>
+            <li class="cursor-pointer hover:text-neutral-300">Episodes</li>
+            <li class="cursor-pointer hover:text-neutral-300">Hosts</li>
+          </ul>
+          <button
+            class="hidden h-11 w-33.75 rounded-full px-4 py-3 text-center bg-[linear-gradient(45deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] md:flex gap-[6.5px] justify-center items-center cursor-pointer"
+          >
+            Subscribe <span><img src="./assets/arrow.png" alt="" /></span>
+          </button>
+          <!-- mobile screen -->
+          <details class="relative md:hidden">
+            <summary class="list-none cursor-pointer">
+              <img src="./assets/hamburger-menu.png" alt="" />
+            </summary>
+            <ul
+              class="absolute right-0 top-5 flex flex-col gap-1 border border-white rounded-md px-5 py-3 bg-[#1A0B2E] text-white"
+            >
+              <li
+                class="hover:bg-[#34165c] p-2 rounded-sm text-center cursor-pointer"
+              >
+                <a href="">About</a>
+              </li>
+              <li
+                class="hover:bg-[#34165c] p-2 rounded-sm text-center cursor-pointer"
+              >
+                <a href="">Episodes</a>
+              </li>
+              <li
+                class="hover:bg-[#34165c] p-2 rounded-sm text-center cursor-pointer"
+              >
+                <a href="">Hosts</a>
+              </li>
+              <li class="">
+                <button
+                  class="bg-[linear-gradient(60deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] rounded-sm p-2 text-center cursor-pointer"
+                >
+                  Subscribe
+                </button>
+              </li>
+            </ul>
+          </details>
+        </div>
+      </nav>
+      <hr />
+    </div>
   </body>
 </html>
