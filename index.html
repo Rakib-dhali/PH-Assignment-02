@@ -12,21 +12,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechWave</title>
   </head>
+
   <body class="font-inter">
     <div id="container" class="w-full max-w-400 h-screen sm:mx-auto">
       <!-- navbar -->
       <nav class="bg-[#1A0B2E] sm:pt-5 h-15 sm:h-24 text-white w-full md:pt-2">
         <div
-          class="flex justify-between items-center  sm:mx-10 md:mx-30 px-5 py-5"
+          class="flex justify-between items-center sm:mx-10 md:mx-30 px-5 py-5"
         >
           <!-- logo -->
           <div
             class="text-white font-bold h-4 w-34.25 text-[25px] sm:text-[30px] flex justify-center items-center"
-          ><a href="/">
-            Tech<span
-              class="bg-[linear-gradient(60deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] bg-clip-text text-transparent"
-              >Wave</span
-            ></a>
+          >
+            <a href="/">
+              Tech<span
+                class="bg-[linear-gradient(60deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] bg-clip-text text-transparent"
+                >Wave</span
+              ></a
+            >
           </div>
           <!-- md screen -->
           <ul class="hidden justify-between gap-8 text-md md:flex">
@@ -74,35 +77,179 @@
         </div>
       </nav>
       <hr class="border-[#412567]" />
+      <!-- banner -->
       <div
         id="banner"
-        class="flex justify-center items-center bg-[url('/assets/hero-bg.png')] w-full max-w-400 h-116.5 md:h-190 bg-cover bg-center bg-no-repeat"
+        class="flex justify-center items-center bg-[url('../assets/hero-bg.png')] w-full max-w-400 h-116.5 md:h-190 bg-cover bg-center bg-no-repeat"
       >
-      <!-- banner circle with microphone -->
-        <div class=" flex flex-col items-center gap-6 md:gap-10">
+        <!-- banner circle with microphone -->
+        <div class="flex flex-col items-center gap-6 md:gap-10">
           <div
-            class="relative md:size-87.5 size-50 bg-[url('/assets/hero-circle.png')] bg-cover bg-center flex justify-center items-center"
-          > <div class=" absolute top-0 right-0 mt-0 md:mr-5.75 md:mt-3 bg-[#00ff88] text-[#1a0b2e] font-semibold px-4 py-2  rounded-full shadow-[0_3px_27px_0_rgba(0,255,136,0.5)]
-">NEW</div>
+            class="relative md:size-87.5 size-50 bg-[url('../assets/hero-circle.png')] bg-cover bg-center flex justify-center items-center"
+          >
+            <div
+              class="absolute top-0 right-0 mt-0 md:mr-5.75 md:mt-3 bg-[#00ff88] text-[#1a0b2e] font-semibold px-4 py-2 rounded-full shadow-[0_3px_27px_0_rgba(0,255,136,0.5)]"
+            >
+              NEW
+            </div>
             <div class="size-20 md:size-50 flex items-center justify-center">
-              <img class="" src="./assets/microphone.png" alt="" />
+              <img class="" src="../assets/microphone.png" alt="" />
             </div>
           </div>
           <!-- banner details -->
-          <div class="text-white ">
-            <h2 class="text-center mb-2 text-[40px] font-extrabold">TechWave</h2>
+          <div class="text-white">
+            <h2 class="text-center mb-2 text-[40px] font-extrabold">
+              TechWave
+            </h2>
             <p class="text-center font-medium mb-6">
               Your daily dose of tech insights, productivity hacks, and personal
               growth
             </p>
-            <div class="flex gap-2 justify-center"><a href="https://open.spotify.com/album/6l6YoH8ESzP9736RkUvL11?si=zOhsvWoMQlWjkjAVia-yfg">
-              <button class="flex gap-2 justify-center items-center bg-[linear-gradient(30deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] px-5 py-3 font-semibold h-11 rounded-full cursor-pointer "
-                ><img class="size-5" src="./assets/spotify.png" alt="" /> Listen On Spotify
-                </button
-              ></a>
-              <button class="group flex gap-2 justify-center items-center border-2 hover:border-[#00FF88] px-5 py-3 font-semibold h-11 text-[#00FF88] hover:text-white hover:bg-[#00FF88] rounded-full cursor-pointer  transition duration-200"
-                ><img class="group-hover:brightness-0 grouphover:invert-0 group-hover:invert" src="./assets/message.png" alt="" /> Subscribe</button
+            <div class="flex gap-2 justify-center">
+              <a
+                href="https://open.spotify.com/album/6l6YoH8ESzP9736RkUvL11?si=zOhsvWoMQlWjkjAVia-yfg"
               >
+                <button
+                  class="flex gap-2 justify-center items-center bg-[linear-gradient(30deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] px-5 py-3 font-semibold h-11 rounded-full cursor-pointer"
+                >
+                  <img class="size-5" src="./assets/spotify.png" alt="" />
+                  Listen On Spotify
+                </button></a
+              >
+              <button
+                class="group flex gap-2 justify-center items-center border-2 hover:border-[#00FF88] px-5 py-3 font-semibold h-11 text-[#00FF88] hover:text-white hover:bg-[#00FF88] rounded-full cursor-pointer transition duration-200"
+              >
+                <img
+                  class="group-hover:brightness-0 grouphover:invert-0 group-hover:invert"
+                  src="./assets/message.png"
+                  alt=""
+                />
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- about -->
+      <div id="about " class="bg-[#1A0B2E] w-full max-w-400">
+        <div class="mx-5 py-10 text-white max-w-300 sm:mx-auto">
+          <h2 class="text-[32px] font-bold text-center mb-4">
+            About the Podcast
+          </h2>
+          <p class="text-center mb-3">
+            TechWave is your go-to podcast for staying ahead in the fast-paced
+            world of technology. We break down complex topics into digestible
+            insights, explore productivity strategies that actually work, and
+            share stories of personal growth from industry leaders. Join
+            thousands of young professionals and tech enthusiasts who start
+            their day with TechWave.
+          </p>
+          <p class="text-center">
+            Join thousands of young professionals and tech enthusiasts who start
+            their day with TechWave.
+          </p>
+        </div>
+        <hr class="border-[#412567] mb-10 mx-5 sm:mx-20 md:mx-50 opacity-20" />
+        <div
+          class="grid max-w-300 sm:mx-auto sm:grid-cols-4 sm:grid-rows-1 grid-cols-2 grid-rows-2 justify-items-centercontent-center gap-10 sm:gap-15 md:gap-20 mx-5 sm:pb-30"
+        >
+          <div class="flex flex-col gap-4 border-2 border-indigo-300">
+            <h2 class="font-black text-[#00fa88] text-[40px] text-center">
+              150K+
+            </h2>
+            <h4 class="uppercase text-center text-white opacity-80 leading-5">
+              Monthly listener
+            </h4>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h2 class="font-black text-[#00fa88] text-[40px] text-center">
+              200+
+            </h2>
+            <h4 class="uppercase text-center text-white opacity-80 leading-5">
+              Episodes Published
+            </h4>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h2 class="font-black text-[#00fa88] text-[40px] text-center">
+              4.9★
+            </h2>
+            <h4 class="uppercase text-center text-white opacity-80 leading-5">
+              Average Rating
+            </h4>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h2 class="font-black text-[#00fa88] text-[40px] text-center">
+              50+
+            </h2>
+            <h4 class="uppercase text-center text-white opacity-80 leading-5">
+              Industry Experts
+            </h4>
+          </div>
+        </div>
+      </div>
+      <!-- why choose -->
+      <div id="why" class="bg-[#230E3D] w-full max-w-400">
+        <div class="p-3 md:mx-50 md:py-30 text-white">
+          <h2 class="text-center text-4xl font-bold mb-4 mt-10">
+            Why Choose TechWave
+          </h2>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[repeat(3,1fr)] md:grid-rows-[repeat(3,225px)] gap-4 auto-rows-fr sm:gap-7.5 max-w-300 sm:mx-auto"
+          >
+            <div
+              class="flex flex-col gap-4 sm:justify-center bg-[#2a0f4d]/50 rounded-[26px] md:row-span-2 md:col-span-1 sm:col-span-2 p-6 sm:p-10"
+            >
+              <img class="size-15" src="./assets/headphone.png" alt="" />
+              <h4 class="text-left font-bold text-[22px]">
+                Premium Audio Quality
+              </h4>
+              <p class="opacity-60 text-left leading-5">
+                Experience crystal-clear sound with professional-grade recording
+                equipment and expert audio engineering. Every episode is
+                mastered for optimal listening across all devices and platforms.
+              </p>
+            </div>
+            <div
+              class="flex flex-col gap-4 md:justify-center bg-[#2a0f4d]/50 rounded-[26px] md:col-span-2 md:row-span-1 p-6 sm:p-10"
+            >
+              <img class="size-15" src="./assets/device.png" alt="" />
+              <h4 class="text-left font-bold text-[22px]">Mobile Friendly</h4>
+              <p class="opacity-60 text-left leading-5">
+                Listen on the go with seamless mobile experience and offline
+                downloads.
+              </p>
+            </div>
+            <div
+              class="flex flex-col gap-4 md:justify-center bg-[#2a0f4d]/50 rounded-[26px] md:col-span-2 md:row-span-1 p-6 sm:p-10"
+            >
+              <img class="size-15" src="./assets/location.png" alt="" />
+              <h4 class="text-left font-bold text-[22px]">Global Community</h4>
+              <p class="opacity-60 text-left leading-5">
+                Connect with tech enthusiasts from over 120 countries worldwide.
+              </p>
+            </div>
+            <div
+              class="flex flex-col gap-4 md:justify-center bg-[#2a0f4d]/50 rounded-[26px] md:col-span-2 md:row-span-1 p-6 sm:p-10"
+            >
+              <img class="size-15" src="./assets/zap-fast.png" alt="" />
+              <h4 class="text-left font-bold text-[22px]">
+                Exclusively Interview
+              </h4>
+              <p class="opacity-60 text-left leading-5">
+                Experience crystal-clear sound with professional-grade recording
+                equipment and expert audio engineering. Every episode is
+                mastered for optimal listening across all devices and platforms.
+              </p>
+            </div>
+            <div
+              class="flex flex-col gap-4 md:justify-center max-h-195.75 bg-[#2a0f4d]/50 rounded-[26px] p-6 sm:p-10"
+            >
+              <img class="size-15" src="./assets/headphone.png" alt="" />
+              <h4 class="text-left font-bold text-[22px]">Rich Resources</h4>
+              <p class="opacity-60 text-left leading-5">
+                Access show notes, transcripts, and additional learning
+                materials for every episode.
+              </p>
             </div>
           </div>
         </div>
