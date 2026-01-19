@@ -12,21 +12,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechWave</title>
   </head>
-  <body>
+  <body class="font-inter">
     <div id="container" class="w-full max-w-400 h-screen sm:mx-auto">
       <!-- navbar -->
-      <nav class="bg-[#1A0B2E] h-15 sm:h-24 text-white w-full">
+      <nav class="bg-[#1A0B2E] sm:pt-5 h-15 sm:h-24 text-white w-full md:pt-2">
         <div
-          class="flex justify-between items-center sm:mx-20 md:mx-50 px-5 py-5"
+          class="flex justify-between items-center  sm:mx-10 md:mx-30 px-5 py-5"
         >
           <!-- logo -->
           <div
             class="text-white font-bold h-4 w-34.25 text-[25px] sm:text-[30px] flex justify-center items-center"
-          >
+          ><a href="/">
             Tech<span
               class="bg-[linear-gradient(60deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] bg-clip-text text-transparent"
               >Wave</span
-            >
+            ></a>
           </div>
           <!-- md screen -->
           <ul class="hidden justify-between gap-8 text-md md:flex">
@@ -64,7 +64,7 @@
               </li>
               <li class="">
                 <button
-                  class="bg-[linear-gradient(60deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] rounded-sm p-2 text-center cursor-pointer"
+                  class="bg-[linear-gradient(60deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] rounded-sm p-2 text-center cursor-pointers hover:scale-110 transition duration-200"
                 >
                   Subscribe
                 </button>
@@ -73,7 +73,40 @@
           </details>
         </div>
       </nav>
-      <hr />
+      <hr class="border-[#412567]" />
+      <div
+        id="banner"
+        class="flex justify-center items-center bg-[url('/assets/hero-bg.png')] w-full max-w-400 h-116.5 md:h-190 bg-cover bg-center bg-no-repeat"
+      >
+      <!-- banner circle with microphone -->
+        <div class=" flex flex-col items-center gap-6 md:gap-10">
+          <div
+            class="relative md:size-87.5 size-50 bg-[url('/assets/hero-circle.png')] bg-cover bg-center flex justify-center items-center"
+          > <div class=" absolute top-0 right-0 mt-0 md:mr-5.75 md:mt-3 bg-[#00ff88] text-[#1a0b2e] font-semibold px-4 py-2  rounded-full shadow-[0_3px_27px_0_rgba(0,255,136,0.5)]
+">NEW</div>
+            <div class="size-20 md:size-50 flex items-center justify-center">
+              <img class="" src="./assets/microphone.png" alt="" />
+            </div>
+          </div>
+          <!-- banner details -->
+          <div class="text-white ">
+            <h2 class="text-center mb-2 text-[40px] font-extrabold">TechWave</h2>
+            <p class="text-center font-medium mb-6">
+              Your daily dose of tech insights, productivity hacks, and personal
+              growth
+            </p>
+            <div class="flex gap-2 justify-center"><a href="https://open.spotify.com/album/6l6YoH8ESzP9736RkUvL11?si=zOhsvWoMQlWjkjAVia-yfg">
+              <button class="flex gap-2 justify-center items-center bg-[linear-gradient(30deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] px-5 py-3 font-semibold h-11 rounded-full cursor-pointer "
+                ><img class="size-5" src="./assets/spotify.png" alt="" /> Listen On Spotify
+                </button
+              ></a>
+              <button class="group flex gap-2 justify-center items-center border-2 hover:border-[#00FF88] px-5 py-3 font-semibold h-11 text-[#00FF88] hover:text-white hover:bg-[#00FF88] rounded-full cursor-pointer  transition duration-200"
+                ><img class="group-hover:brightness-0 grouphover:invert-0 group-hover:invert" src="./assets/message.png" alt="" /> Subscribe</button
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
