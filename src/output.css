@@ -541,6 +541,9 @@
   .bg-\[url\(\'\.\.\/assets\/hero-circle\.png\'\)\] {
     background-image: url('../assets/hero-circle.png');
   }
+  .bg-\[url\(\'\.\/assets\/footer-bg\.png\'\)\] {
+    background-image: url('./assets/footer-bg.png');
+  }
   .bg-\[url\(\.\.\/\)\] {
     background-image: url(../);
   }
