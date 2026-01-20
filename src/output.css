@@ -313,6 +313,9 @@
   .h-15 {
     height: calc(var(--spacing) * 15);
   }
+  .h-62 {
+    height: calc(var(--spacing) * 62);
+  }
   .h-98 {
     height: calc(var(--spacing) * 98);
   }
@@ -327,6 +330,12 @@
   }
   .h-116\.5 {
     height: calc(var(--spacing) * 116.5);
+  }
+  .h-\[248\] {
+    height: 248;
+  }
+  .h-\[248px\] {
+    height: 248px;
   }
   .h-screen {
     height: 100vh;
@@ -355,8 +364,17 @@
   .w-100 {
     width: calc(var(--spacing) * 100);
   }
+  .w-110 {
+    width: calc(var(--spacing) * 110);
+  }
+  .w-440 {
+    width: calc(var(--spacing) * 440);
+  }
   .w-\[90\%\] {
     width: 90%;
+  }
+  .w-\[440px\] {
+    width: 440px;
   }
   .w-full {
     width: 100%;
@@ -526,6 +544,15 @@
   .bg-\[url\(\.\.\/assets\/\)\] {
     background-image: url(../assets/);
   }
+  .bg-\[url\(\.\.\/assets\/footer\)\] {
+    background-image: url(../assets/footer);
+  }
+  .bg-\[url\(\.\.\/assets\/footer-bg\.png\)\] {
+    background-image: url(../assets/footer-bg.png);
+  }
+  .bg-\[url\(\.\.\/assets\/footerbg\)\] {
+    background-image: url(../assets/footerbg);
+  }
   .bg-cover {
     background-size: cover;
   }
@@ -595,6 +622,12 @@
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
   }
+  .pb-6 {
+    padding-bottom: calc(var(--spacing) * 6);
+  }
+  .pb-10 {
+    padding-bottom: calc(var(--spacing) * 10);
+  }
   .pb-15 {
     padding-bottom: calc(var(--spacing) * 15);
   }
@@ -663,6 +696,12 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .text-nowrap {
+    text-wrap: nowrap;
+  }
+  .text-wrap {
+    text-wrap: wrap;
+  }
   .text-\[\#00FF88\] {
     color: #00FF88;
   }
@@ -692,6 +731,9 @@
   }
   .opacity-60 {
     opacity: 60%;
+  }
+  .opacity-75 {
+    opacity: 75%;
   }
   .opacity-80 {
     opacity: 80%;
@@ -963,6 +1005,11 @@
       font-size: 30px;
     }
   }
+  .sm\:text-\[40px\] {
+    @media (width >= 576px) {
+      font-size: 40px;
+    }
+  }
   .md\:col-span-1 {
     @media (width >= 992px) {
       grid-column: span 1 / span 1;
@@ -1008,6 +1055,11 @@
       margin-right: calc(var(--spacing) * 5.75);
     }
   }
+  .md\:mb-8 {
+    @media (width >= 992px) {
+      margin-bottom: calc(var(--spacing) * 8);
+    }
+  }
   .md\:mb-10 {
     @media (width >= 992px) {
       margin-bottom: calc(var(--spacing) * 10);
@@ -1040,6 +1092,11 @@
       height: calc(var(--spacing) * 87.5);
     }
   }
+  .md\:h-103 {
+    @media (width >= 992px) {
+      height: calc(var(--spacing) * 103);
+    }
+  }
   .md\:h-110 {
     @media (width >= 992px) {
       height: calc(var(--spacing) * 110);
@@ -1048,6 +1105,16 @@
   .md\:h-190 {
     @media (width >= 992px) {
       height: calc(var(--spacing) * 190);
+    }
+  }
+  .md\:h-\[412\] {
+    @media (width >= 992px) {
+      height: 412;
+    }
+  }
+  .md\:h-\[412px\] {
+    @media (width >= 992px) {
+      height: 412px;
     }
   }
   .md\:w-full {
@@ -1095,6 +1162,11 @@
       gap: calc(var(--spacing) * 7.5);
     }
   }
+  .md\:gap-8 {
+    @media (width >= 992px) {
+      gap: calc(var(--spacing) * 8);
+    }
+  }
   .md\:gap-10 {
     @media (width >= 992px) {
       gap: calc(var(--spacing) * 10);
@@ -1110,9 +1182,19 @@
       padding: calc(var(--spacing) * 10);
     }
   }
+  .md\:px-30 {
+    @media (width >= 992px) {
+      padding-inline: calc(var(--spacing) * 30);
+    }
+  }
   .md\:py-20 {
     @media (width >= 992px) {
       padding-block: calc(var(--spacing) * 20);
+    }
+  }
+  .md\:py-40 {
+    @media (width >= 992px) {
+      padding-block: calc(var(--spacing) * 40);
     }
   }
   .md\:py-50 {
@@ -1125,6 +1207,11 @@
       padding-top: calc(var(--spacing) * 2);
     }
   }
+  .md\:pb-30 {
+    @media (width >= 992px) {
+      padding-bottom: calc(var(--spacing) * 30);
+    }
+  }
   .md\:text-left {
     @media (width >= 992px) {
       text-align: left;
@@ -1134,6 +1221,17 @@
     @media (width >= 992px) {
       font-size: var(--text-5xl);
       line-height: var(--tw-leading, var(--text-5xl--line-height));
+    }
+  }
+  .md\:text-\[60px\] {
+    @media (width >= 992px) {
+      font-size: 60px;
+    }
+  }
+  .md\:font-\[60px\] {
+    @media (width >= 992px) {
+      --tw-font-weight: 60px;
+      font-weight: 60px;
     }
   }
 }
